@@ -33,7 +33,8 @@ import {
     BorderOptionMixin,
     OptionDataValue,
     BuiltinVisualProperty,
-    DimensionIndex
+    DimensionIndex,
+    DimensionLoose
 } from '../../util/types';
 import ComponentModel from '../../model/Component';
 import Model from '../../model/Model';
@@ -85,7 +86,7 @@ export interface VisualMapOption<T extends VisualOptionBase = VisualOptionBase> 
     /**
      * Dimension to be encoded
      */
-    dimension?: number
+    dimension?: DimensionLoose
 
     /**
      * Visual configuration for the data in selection
